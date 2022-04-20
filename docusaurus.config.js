@@ -1,4 +1,6 @@
 const path = require("path");
+const fs = require("fs");
+const spec = fs.readFileSync("./api.swagger.json", "utf-8");
 
 module.exports = {
   title: "Kidsloop",
@@ -75,7 +77,7 @@ module.exports = {
     ],
   ],
   customFields: {
-    apiSpec: path.resolve(__dirname, "api.swagger.json"),
+    apiSpec: JSON.parse(spec),
   },
   plugins: [path.resolve(__dirname, "redoc-plugin")],
 };
