@@ -1,7 +1,4 @@
-const YAML = require('yaml');
-const fs = require('fs');
 const path = require('path');
-const spec = fs.readFileSync('./petstore.yaml', 'utf-8');
 
 module.exports = {
   title: 'Kidsloop',
