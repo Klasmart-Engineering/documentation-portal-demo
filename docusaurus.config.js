@@ -7,8 +7,6 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/icon.png",
-  deploymentBranch: "deployment",
-  trailingSlash: false,
   organizationName: "KL-Engineering",
   projectName: "documentation-portal-demo",
   themeConfig: {
