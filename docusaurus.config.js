@@ -75,7 +75,7 @@ module.exports = {
     ],
   ],
   customFields: {
-    apiSpec: "https://swagger-ui.kidsloop.net/config/api.swagger.json",
+    apiSpec: path.resolve(__dirname, "api.swagger.json"),
   },
   plugins: [path.resolve(__dirname, "redoc-plugin")],
 };
